@@ -9,8 +9,8 @@ function App() {
   const [search, setSearch] = useState("")
   const [query, setQuery] = useState("")
   
-  const APP_ID = "a1af76d9";
-  const APP_KEY = "715ec8f2a41be6a3c49d448fc5b0d054";
+  const APP_ID = process.env.REACT_APP_API_ID;
+  const APP_KEY = process.env.REACT_APP_API_KEY;
   
 
   useEffect(() => {getRecipe();}, [query])
